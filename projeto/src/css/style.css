@@ -1,0 +1,112 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-ExtraBold.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Light.ttf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Esse abaixo é só a tela incial*/
+
+body {
+    background-image:url("../../assets/img/Fundo.jpg") ;
+}
+
+.container-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    margin-top: 6%;
+}
+
+.btn-primary {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #1e5fa3;
+    color: #ffffff;
+    border: 1px soli #1e5fa3;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+
+}
+
+.card-img-top{
+  width: 300px;
+  height: 300px;
+ object-fit: cover;
+ justify-content:space-between;
+ border-radius: 10px;
+}
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 12px;
+    width: px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+a.btn-acesso {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #0056b3;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a.btn-acesso:hover {
+    background-color: #0056b3;
+}
+
+/* Botão Voltar (mesmo estilo) */
+.Voltar {
+    margin-top: 20px;   /* só para dar um espaço extra */
+}
+    div.creditos {
+        text-align: center;
+        margin-top: 50px;
+        padding: 20px;
+    }
