@@ -1,13 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sou Visitante</title>
+    <link rel="stylesheet" href="./src/css/visitante.css">
 </head>
-<body>
-  <a href="index.html" class="btn-acesso">Voltar</a>
-    <div class="creditos">
+
+<button class="btn-voltar" onclick="window.location.href='index.html'">Voltar</button>
+
+<main class="page">
+  <div class="card-wrap">
+    <h1 class="titulo">Sou Visitante</h1>
+
+    <!-- opções iniciais -->
+    <section id="opcoes-iniciais" class="menu">
+      <button class="btn-opcao" onclick="escolherNivel('infantil')">Educação Infantil</button>
+      <button class="btn-opcao" onclick="escolherNivel('fundamental')">Ensino Fundamental</button>
+      <button class="btn-opcao" onclick="escolherNivel('medio')">Ensino Médio</button>
+      <button class="btn-opcao" onclick="abrirChat('RH')">Falar com o RH</button>
+    </section>
+
+    <!-- menu infantil -->
+    <section id="menu-infantil" class="menu hidden">
+      <h2>Educação Infantil</h2>
+
+      <button class="btn-opcao" onclick="abrirChat('Secretaria Escolar')">Falar com a Secretaria Escolar</button>
+
+      <a class="btn-opcao" href="pdfs/calendario_escolar_infantil.pdf" target="_blank" rel="noopener">Ver calendário escolar</a>
+
+      <button class="btn-opcao" onclick="mostrarTexto('adaptacao')">Como funciona a adaptação escolar?</button>
+
+      <button class="btn-opcao" onclick="mostrarTexto('metodologia')">Qual é a metodologia de ensino?</button>
+
+      <button class="btn-opcao" onclick="mostrarTexto('horarios')">Qual o horário de funcionamento?</button>
+
+      <button class="btn-secundario" onclick="voltarInicio()">Voltar</button>
+    </section>
+
+    <!-- menu fundamental/médio -->
+    <section id="menu-fund-med" class="menu hidden">
+      <h2 id="titulo-fund-med">Ensino</h2>
+
+      <button class="btn-opcao" onclick="abrirChat('Secretaria Escolar')">Falar com a Secretaria Escolar</button>
+
+      <a id="link-calendario" class="btn-opcao" href="#" target="_blank" rel="noopener">Ver calendário escolar</a>
+
+      <button class="btn-opcao" onclick="mostrarTexto('material')">Qual o material didático usado pela escola?</button>
+
+      <button class="btn-opcao" onclick="mostrarTexto('horarios')">Qual o horário de funcionamento?</button>
+
+      <button class="btn-secundario" onclick="voltarInicio()">Voltar</button>
+    </section>
+
+    <!-- texto explicativo -->
+    <section id="texto" class="texto hidden" aria-live="polite"></section>
+
+    <!-- RH (informação + chat disponível via botão acima) -->
+    <section id="rh" class="menu hidden">
+      <h2>Contato do RH</h2>
+      <p>Para falar com o Setor de RH da instituição, envie um e-mail para:</p>
+      <p class="destaque">colegiofive@gmail.com</p>
+      <p class="destaque">0800 000 000</p>
+      <button class="btn-secundario" onclick="voltarInicio()">Voltar</button>
+    </section>
+
+    <!-- Chat reutilizável -->
+    <section id="chatContainer" class="chat hidden" aria-live="polite">
+      <h2 id="chatTitle">Chat</h2>
+
+      <div id="chatMessages" class="chat-messages" role="log" aria-atomic="true"></div>
+
+      <label for="chatMessage" class="sr-only">Digite sua mensagem</label>
+      <textarea id="chatMessage" class="chat-input" placeholder="Escreva sua mensagem..." rows="5"></textarea>
+
+      <div class="chat-actions">
+        <button id="sendChatBtn" class="btn-opcao">Enviar</button>
+        <button class="btn-secundario" onclick="fecharChat()">Fechar</button>
+      </div>
+
+      <p id="chatConfirm" class="chat-confirm hidden">
+        Sua mensagem foi enviada com sucesso! Em breve responderemos.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<script src=".src/js/visitante.js"></script>
   <p>
     &COPY; Copyright 2025 | by Anthony,Beatriz e Yrion 🎲
   </p>

@@ -1,0 +1,240 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-ExtraBold.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Light.ttf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+/* ==============================
+   VARIÁVEIS
+============================== */
+:root {
+    --blue: #007bff;
+    --blue-dark: rgb(0, 86, 179);
+    --card-bg: rgba(0, 0, 0, 0.6);
+    --white: #ffffff;
+}
+
+/* ==============================
+   RESET E CONFIGURAÇÕES GERAIS
+============================== */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-image: url('../../assets/img/Fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--white);
+}
+
+/* ==============================
+   ESTRUTURA PRINCIPAL
+============================== */
+.page {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+}
+
+.card-wrap {
+    width: 100%;
+    max-width: 760px;
+    background: var(--card-bg);
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 18px;
+    color: var(--white);
+}
+
+/* ==============================
+   MENUS E BOTÕES
+============================== */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+}
+
+.btn-opcao {
+    background: var(--blue);
+    border: none;
+    color: var(--white);
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    transition: background 0.18s;
+}
+
+.btn-opcao:hover {
+    background: var(--blue-dark);
+}
+
+.btn-secundario {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.btn-secundario:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.btn-voltar {
+    position: fixed;
+    left: 18px;
+    top: 16px;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 9px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 40;
+}
+
+.hidden {
+    display: none;
+}
+
+.texto {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 14px;
+    color: #fff;
+    text-align: left;
+    line-height: 1.45;
+}
+
+.destaque {
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.sr-only {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+/* ==============================
+   CHAT
+============================== */
+.chat {
+    margin-top: 16px;
+    color: #111;
+    padding: 14px;
+    border-radius: 12px;
+}
+
+#chatTitle {
+    margin: 0 0 8px;
+    color: var(--blue-dark);
+}
+
+.chat-messages {
+    max-height: 220px;
+    overflow: auto;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.msg {
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    max-width: 85%;
+}
+
+.msg.user {
+    background: var(--blue);
+    color: #fff;
+    margin-left: auto;
+    text-align: right;
+}
+
+.msg.system {
+    background: #f1f1f1;
+    color: #111;
+    text-align: left;
+}
+
+.chat-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 14px;
+}
+
+.chat-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.chat-confirm {
+    color: green;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+@media (min-width: 700px) {
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .btn-opcao {
+        flex: 1;
+        min-width: 210px;
+    }
+}

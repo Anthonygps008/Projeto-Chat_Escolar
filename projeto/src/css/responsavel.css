@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-ExtraBold.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Light.ttf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body {
+    background: url("../../assets/img/Fundo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+body {
+    text-align: center;
+}
+
+.titulo {
+    color: #003366;
+    margin-top: 20px;
+}
+
+.btn, .voltarBtn, .voltarIndex {
+    width: 80%;
+    padding: 15px;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin: 10px auto;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover,
+.voltarBtn:hover,
+.voltarIndex:hover {
+    background: #00509e;
+}
+
+.hidden {
+    display: none;
+}
+
+#chatContainer, #menuResponsavel, #escolherEtapa {
+      background: rgb(0, 86, 179, 0.3);
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+#chatMessage {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    resize: none;
+}
+
+.success-message {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}

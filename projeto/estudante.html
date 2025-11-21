@@ -1,17 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portal do Aluno</title>
+    <link rel="stylesheet" href="./src/css/aluno.css">
 </head>
 <body>
-    <a href="index.html" class="btn-acesso">Voltar</a>
-    <div class="creditos">
-  <p>
-    &COPY; Copyright 2025 | by Anthony,Beatriz e Yrion 🎲
-  </p>
-</div>
 
+    <h1 class="titulo">Sou Aluno</h1>
+
+    <!-- Seleção de nível -->
+    <div class="container">
+        <button class="opcaoBtn" onclick="escolherNivel('fundamental')">Ensino Fundamental</button>
+        <button class="opcaoBtn" onclick="escolherNivel('medio')">Ensino Médio</button>
+    </div>
+
+    <!-- Opções após escolher nível -->
+    <div id="menuAluno" class="hidden container2">
+        <button class="submenuBtn" onclick="abrirCalendarioEscolar()">Ver Calendário Escolar</button>
+        <button class="submenuBtn" onclick="abrirCalendarioProvas()">Ver Calendário de Provas</button>
+        <button class="submenuBtn" onclick="abrirMensagemProfessor()">Enviar mensagem para o professor</button>
+        <button class="btn voltarBtn" onclick="voltarInicio()">Voltar</button>
+        <button class="btn voltarBtn" onclick="voltarIndex()">Voltar</button>
+    </div>
+
+    <!-- Formulário de mensagem para o professor -->
+    <div id="mensagemProfessor"  class="hidden formBox">
+      <button class="btn voltarBtn" onclick="fecharFormulario()">Voltar</button>
+        <h2>Enviar mensagem para o professor</h2>
+
+        <label for="emailAluno">Seu e-mail:</label>
+        <input type="email" id="emailAluno" placeholder="Digite seu e-mail">
+
+        <label for="disciplina">Selecione a disciplina:</label>
+        <select id="disciplina">
+            <option value="">Escolha uma disciplina</option>
+            <option>Matemática</option>
+            <option>Português</option>
+            <option>Ciências</option>
+            <option>História</option>
+            <option>Geografia</option>
+            <option>Inglês</option>
+            <option>Artes</option>
+        </select>
+
+        <label for="mensagemTexto">Mensagem:</label>
+        <textarea id="mensagemTexto" placeholder="Digite sua mensagem aqui..."></textarea>
+
+        <button class="btn" id="btnEnviarMensagem">Enviar</button>
+
+        <p id="msgSucesso" class="hidden sucesso">
+            Sua mensagem foi enviada com sucesso! O professor responderá pelo seu e-mail em até 48h.
+        </p>
+    </div>
+    
+
+
+    <script src=".src/js/script-aluno.js"></script>
 </body>
 </html>

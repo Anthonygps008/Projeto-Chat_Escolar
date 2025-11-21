@@ -2,13 +2,59 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsável</title>
+    <link rel="stylesheet" href="./src/css/responsavel.css">
 </head>
 <body>
-  <a href="index.html" class="btn-acesso">Voltar</a>
-    <div class="creditos">
-  <p>
+
+    <h1 class="titulo">Sou Responsável</h1>
+
+    <!-- SELEÇÃO DE ETAPA -->
+    <div id="escolherEtapa">
+        <h2>Escolha o nível educacional:</h2>
+
+        <button class="btn" onclick="selecionarEtapa('infantil')">Educação Infantil</button>
+        <button class="btn" onclick="selecionarEtapa('fundamental')">Ensino Fundamental</button>
+        <button class="btn" onclick="selecionarEtapa('medio')">Ensino Médio</button>
+
+        <button class="voltarIndex" onclick="location.href='index.html'">Voltar ao início</button>
+    </div>
+
+    <!-- MENU DO RESPONSÁVEL -->
+    <div id="menuResponsavel" class="hidden">
+        <h2 id="tituloEtapa"></h2>
+
+        <button class="btn" onclick="abrirChat('Secretaria Escolar')">Falar com a Secretaria Escolar</button>
+        <button class="btn" onclick="abrirChat('Coordenação Pedagógica')">Falar com a Coordenação Pedagógica</button>
+        <button class="btn" onclick="abrirChat('Professor')">Enviar mensagem para o professor</button>
+        <button class="btn" onclick="abrirChat('Centro de Apoio à Inclusão Escolar')">Falar com o Centro de Inclusão</button>
+
+        <button class="btn" onclick="baixarCalendario()">Ver calendário escolar (PDF)</button>
+
+        <button class="voltarBtn" onclick="voltarEscolha()">Voltar</button>
+    </div>
+
+    <!-- CHAT -->
+    <div id="chatContainer" class="hidden">
+        <h2 id="chatTitle"></h2>
+
+        <label for="chatMessage">Digite sua mensagem:</label>
+        <textarea id="chatMessage" placeholder="Escreva aqui..." required></textarea>
+
+        <button id="sendChatBtn" class="btn">Enviar</button>
+
+        <p id="chatResponse" class="hidden success-message">
+            Sua mensagem foi enviada com sucesso! Em breve responderemos.
+        </p>
+
+        <button class="voltarBtn" onclick="voltarMenuResponsavel()">Voltar</button>
+    </div>
+
+<script src=".src/js/responsavel.js"></script>
+</body>
+</html>
+</body>
+</html>
     &COPY; Copyright 2025 | by Anthony,Beatriz e Yrion 🎲
   </p>
 </div>

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-ExtraBold.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Light.ttf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url("../../assets/img/Fundo.jpg") ;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.container, .container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.opcaoBtn, .submenuBtn {
+    background: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.opcaoBtn:hover, .submenuBtn:hover {
+    background: #005fcc;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Formulário de mensagem */
+.formBox {
+    background: #ffffffcc;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px #0002;
+}
+
+.formBox label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.formBox input,
+.formBox select,
+.formBox textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 15px;
+}
+
+.formBox textarea {
+    height: 120px;
+}
+
+.btn {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #0069d9;
+}
+
+.sucesso {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+.voltarBtn {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.voltarBtn:hover {
+    background: #0069d9;
+}
