@@ -63,8 +63,7 @@ function mostrarTexto(tipo){
     conteudo = `<h3>Qual é a metodologia de ensino?</h3>
     <p>Nossa metodologia é baseada na Montessoriana, priorizando o brincar, a interação e a experimentação, com atividades que respeitam o desenvolvimento individual da criança. Focamos na autonomia, materiais acessíveis e abordagens construtivistas.</p>
     <p><strong>Para visita, selecione “Falar com a Secretaria Escolar”.</strong></p>`;
-  } else if(typeoF = (tipo === 'horarios')){ /* eslint-disable-line */
-    // usando expressão direta:
+  } else if(typeoF = (tipo === 'horarios')){
   }
   if(tipo === 'horarios'){
     conteudo = `<h3>Horários de funcionamento</h3>
