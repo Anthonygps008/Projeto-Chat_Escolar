@@ -22,10 +22,7 @@
 
 body {
     background: url("../../assets/img/Fundo.jpg") no-repeat center center fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+   
 
 
 }
@@ -35,17 +32,26 @@ body {
 }
 
 .titulo {
-    color: #003366;
-    margin-top: 20px;
+      display: block;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #0e5c0045;
+    color: #000000;
+    border: 1px soli #7fff86;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .btn, .voltarBtn, .voltarIndex {
-    width: 80%;
+        background: rgb(232, 245, 233, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 15px;
-    background: #003366;
-    color: white;
-    border: none;
     border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 4px 12px rgba(0,100,0,0.15);
     margin: 10px auto;
     display: block;
     font-size: 16px;
@@ -55,7 +61,7 @@ body {
 .btn:hover,
 .voltarBtn:hover,
 .voltarIndex:hover {
-    background: #00509e;
+    background: #7fff86;
 }
 
 .hidden {
@@ -63,7 +69,7 @@ body {
 }
 
 #chatContainer, #menuResponsavel, #escolherEtapa {
-      background: rgb(0, 86, 179, 0.3);
+      background: #0056b34d;
     max-width: 450px;
     margin: 20px auto;
     padding: 20px;
