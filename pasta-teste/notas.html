@@ -1,21 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><h1>Notas do Estudante</h1></title>
-  <link rel="stylesheet" href="css/global.css">
-  <script defer src="js/script.js"></script>
+<meta charset="UTF-8">
+<title>Notas</title>
+
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="notas">
-  
-  <div class="grid"><h1>Notas do Estudante</h1>
 
-      <div class="item">Matemática: 8.5</div>
-      <div class="item">Português: 7.0</div>
-      <div class="item">História: 9.0</div>
-      <div class="item">Ciências: 8.0</div>
-  </div>
+<body>
+
+<main class="container">
+
+    <section class="notas">
+
+        <header class="notas-header">
+            <h1>Minhas Notas</h1>
+            <p><strong>Aluno:</strong> Maria Silva</p>
+        </header>
+
+        <table class="tabela-notas">
+
+            <thead>
+                <tr>
+                    <th scope="col">Disciplina</th>
+                    <th scope="col">1º Bim</th>
+                    <th scope="col">2º Bim</th>
+                    <th scope="col">3º Bim</th>
+                    <th scope="col">4º Bim</th>
+                    <th scope="col">Média</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <th scope="row">Matemática</th>
+                    <td>8.0</td>
+                    <td>7.5</td>
+                    <td>9.0</td>
+                    <td>8.5</td>
+                    <td>8.25</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Português</th>
+                    <td>7.0</td>
+                    <td>8.0</td>
+                    <td>7.5</td>
+                    <td>9.0</td>
+                    <td>7.87</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">História</th>
+                    <td>9.0</td>
+                    <td>8.5</td>
+                    <td>8.0</td>
+                    <td>9.5</td>
+                    <td>8.75</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <footer class="resumo">
+            <p><strong>Média Geral:</strong> 8.29</p>
+        </footer>
+
+    </section>
+
+</main>
+
+<footer class="creditos">
+    <p>&copy; 2026 | Anthony Gabriel | Portal Escolar</p>
+</footer>
+
 </body>
-
 </html>

@@ -2,9 +2,9 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Aluno</title>
+<title>Área do Estudante</title>
 
-<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/estudante.css">
 
 <script defer src="js/script.js"></script>
@@ -12,22 +12,62 @@
 
 <body>
 
-<h1>Área do Aluno</h1>
+<main class="container">
 
-<div class="grid">
- <div class="grid">
-    <div class="item" data-link="notas.html">📝 Notas</div>
-    <div class="item" data-link="frequencia.html">📅 Frequência</div>
-    <div class="item" data-link="material.html">📖 Material</div>
-    <div class="item" data-link="avisos.html">📢 Avisos</div>
-    <div class="item" data-link="contato.html">📩 Falar com a escola</div>
-</div>
-</div>
+    <!-- TOPO -->
+    <header class="topo">
+        <h1>Área do Estudante</h1>
+        <p>Bem-vindo, Maria 👋</p>
+    </header>
 
-  <div class="creditos">
-  <p>
-    &COPY; Copyright 2025 | by Anthony 🎲
-  </p>
-</div>
+    <!-- MENU -->
+    <nav class="menu">
+
+        <ul>
+            <li><a href="boletim.html">Boletim</a></li>
+            <li><a href="desempenho.html">Desempenho</a></li>
+            <li><a href="avisos.html">Avisos</a></li>
+            <li><a href="comunicados.html">Comunicados</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- CARDS PRINCIPAIS -->
+    <section class="cards">
+
+        <article class="card" data-link="boletim.html">
+            <h2>Boletim</h2>
+            <p>Visualize suas notas</p>
+        </article>
+
+        <article class="card" data-link="desempenho.html">
+            <h2>Desempenho</h2>
+            <p>Acompanhe seu rendimento</p>
+        </article>
+
+        <article class="card" data-link="avisos.html">
+            <h2>Avisos</h2>
+            <p>Informações importantes</p>
+        </article>
+
+        <article class="card" data-link="comunicados.html">
+            <h2>Comunicados</h2>
+            <p>Mensagens da escola</p>
+        </article>
+
+        <article class="card" data-link="contato.html">
+            <h2>Contato</h2>
+            <p>Fale com a escola</p>
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="creditos">
+    <p>&copy; 2026 | Anthony Gabriel | Portal Escolar</p>
+</footer>
+
 </body>
 </html>

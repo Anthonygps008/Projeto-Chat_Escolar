@@ -2,30 +2,68 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Responsável</title>
+<title>Área do Responsável</title>
 
-<link rel="stylesheet" href="css/global.css">
-<link rel="stylesheet" href="css/responsavel.css">
-
+<link rel="stylesheet" href="css/style.css">
 <script defer src="js/script.js"></script>
 </head>
 
 <body>
 
-<h1>Área do Responsável</h1>
+<main class="container">
 
-<div class="grid">
-    <div class="item" data-link="desempenho.html">👨‍👩‍👧 Desempenho</div>
-    <div class="item" data-link="boletim.html">📊 Boletim</div>
-    <div class="item" data-link="frequencia-resp.html">📅 Frequência</div>
-    <div class="item" data-link="comunicados.html">📢 Comunicados</div>
-    <div class="item" data-link="contato.html">📩 Falar com a escola</div>
-</div>
+    <!-- TOPO -->
+    <header class="topo">
+        <h1>Área do Responsável</h1>
+        <p>Bem-vindo, João 👋</p>
+    </header>
 
-  <div class="creditos">
-  <p>
-    &COPY; Copyright 2025 | by Anthony 🎲
-  </p>
-</div>
+    <!-- MENU -->
+    <nav class="menu" aria-label="Menu do responsável">
+        <ul>
+            <li><a href="frequencia-resp.html">Frequência</a></li>
+            <li><a href="notas.html">Notas</a></li>
+            <li><a href="boletim.html">Boletim</a></li>
+            <li><a href="comunicados.html">Comunicados</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- CARDS -->
+    <section class="cards">
+
+        <article class="card" data-link="frequencia-resp.html">
+            <h2>Frequência</h2>
+            <p>Acompanhe a presença do aluno</p>
+        </article>
+
+        <article class="card" data-link="notas.html">
+            <h2>Notas</h2>
+            <p>Veja o desempenho por disciplina</p>
+        </article>
+
+        <article class="card" data-link="boletim.html">
+            <h2>Boletim</h2>
+            <p>Resumo completo do aluno</p>
+        </article>
+
+        <article class="card" data-link="comunicados.html">
+            <h2>Comunicados</h2>
+            <p>Mensagens da escola</p>
+        </article>
+
+        <article class="card" data-link="contato.html">
+            <h2>Contato</h2>
+            <p>Fale com a escola</p>
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="creditos">
+    <p>&copy; 2026 | Anthony Gabriel | Portal Escolar</p>
+</footer>
+
 </body>
 </html>

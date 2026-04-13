@@ -4,51 +4,77 @@
 <meta charset="UTF-8">
 <title>Boletim</title>
 
-<link rel="stylesheet" href="css/global.css">
-<script defer src="js/script.js"></script>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="notas">
+<body>
 
-<h1>Boletim do Aluno</h1>
+<main class="container">
 
-<div class="tabela-container">
-    <table>
-        <thead>
-            <tr>
-                <th>Matéria</th>
-                <th>Nota</th>
-                <th>Situação</th>
-            </tr>
-        </thead>
+    <section class="boletim">
 
-        <tbody>
-            <tr>
-                <td>Matemática</td>
-                <td class="nota-alta">8.5</td>
-                <td class="aprovado">Aprovado</td>
-            </tr>
+        <header class="boletim-header">
+            <h1>Boletim Escolar</h1>
+            <p><strong>Aluno:</strong> Maria Silva</p>
+            <p><strong>Turma:</strong> 3º Ano</p>
+        </header>
 
-            <tr>
-                <td>Português</td>
-                <td class="nota-media">6.5</td>
-                <td class="recuperacao">Recuperação</td>
-            </tr>
+        <table class="tabela-notas">
 
-            <tr>
-                <td>História</td>
-                <td class="nota-alta">9.0</td>
-                <td class="aprovado">Aprovado</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Disciplina</th>
+                    <th>1º Bimestre</th>
+                    <th>2º Bimestre</th>
+                    <th>3º Bimestre</th>
+                    <th>4º Bimestre</th>
+                    <th>Média</th>
+                </tr>
+            </thead>
 
-            <tr>
-                <td>Ciências</td>
-                <td class="nota-baixa">5.0</td>
-                <td class="reprovado">Reprovado</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+            <tbody>
+                <tr>
+                    <td>Matemática</td>
+                    <td>8.0</td>
+                    <td>7.5</td>
+                    <td>9.0</td>
+                    <td>8.5</td>
+                    <td>8.25</td>
+                </tr>
+
+                <tr>
+                    <td>Português</td>
+                    <td>7.0</td>
+                    <td>8.0</td>
+                    <td>7.5</td>
+                    <td>9.0</td>
+                    <td>7.87</td>
+                </tr>
+
+                <tr>
+                    <td>História</td>
+                    <td>9.0</td>
+                    <td>8.5</td>
+                    <td>8.0</td>
+                    <td>9.5</td>
+                    <td>8.75</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <footer class="boletim-footer">
+            <p><strong>Média Geral:</strong> 8.29</p>
+            <p><strong>Status:</strong> Aprovado</p>
+        </footer>
+
+    </section>
+
+</main>
+
+<footer class="creditos">
+    <p>&copy; 2026 | Anthony Gabriel | Portal Escolar</p>
+</footer>
 
 </body>
 </html>

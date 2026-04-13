@@ -1,20 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<link rel="stylesheet" href="css/global.css">
-<script defer src="js/script.js"></script>
+<meta charset="UTF-8">
+<title>Desempenho</title>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body class="notas">
+<body>
 
-<h1>Desempenho do Aluno</h1>
+<main class="container">
 
-<div class="grid">
-    <div class="item">📈 Média Geral: 8.1</div>
-    <div class="item">🏆 Melhor matéria: História</div>
-    <div class="item">⚠️ Precisa melhorar: Português</div>
-    <div class="item">📊 Situação: Aprovado</div>
-</div>
+    <section class="desempenho">
+
+        <header class="desempenho-header">
+            <h1>Desempenho do Aluno</h1>
+            <p><strong>Aluno:</strong> Maria Silva</p>
+            <p><strong>Turma:</strong> 3º Ano</p>
+        </header>
+
+        <!-- RESUMO -->
+        <section class="resumo">
+
+            <article class="card">
+                <h2>Média Geral</h2>
+                <p>8.3</p>
+            </article>
+
+            <article class="card">
+                <h2>Frequência</h2>
+                <p>92%</p>
+            </article>
+
+        </section>
+
+        <!-- PROGRESSO -->
+        <section class="progresso">
+            <h2>Progresso nas Disciplinas</h2>
+
+            <article class="disciplina">
+                <h3>Matemática</h3>
+                <progress value="80" max="100"></progress>
+            </article>
+
+            <article class="disciplina">
+                <h3>Português</h3>
+                <progress value="75" max="100"></progress>
+            </article>
+
+            <article class="disciplina">
+                <h3>História</h3>
+                <progress value="90" max="100"></progress>
+            </article>
+
+        </section>
+
+        <!-- OBSERVAÇÕES -->
+        <footer class="observacoes">
+            <p>Aluno com bom desempenho geral, manter constância nos estudos.</p>
+        </footer>
+
+    </section>
+
+</main>
+
+<footer class="creditos">
+    <p>&copy; 2026 | Anthony Gabriel | Portal Escolar</p>
+</footer>
 
 </body>
 </html>

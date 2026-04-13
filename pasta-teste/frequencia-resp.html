@@ -1,20 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<link rel="stylesheet" href="css/global.css">
-<script defer src="js/script.js"></script>
+<meta charset="UTF-8">
+<title>Frequência do Aluno</title>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body class="frequencia">
+<body>
 
-<h1>Frequência do Aluno</h1>
+<main class="container">
 
-<div class="grid">
-    <div class="item">📅 Presenças: 42 dias</div>
-    <div class="item">❌ Faltas: 3 dias</div>
-    <div class="item">⏰ Atrasos: 2</div>
-    <div class="item">📊 Frequência: 93%</div>
-</div>
+    <section class="frequencia">
+
+        <header class="frequencia-header">
+            <h1>Frequência do Aluno</h1>
+            <p><strong>Aluno:</strong> Maria Silva</p>
+            <p><strong>Responsável:</strong> João Silva</p>
+        </header>
+
+        <section class="resumo">
+
+            <article class="card">
+                <h2>Frequência Geral</h2>
+                <p class="valor">92%</p>
+                <progress value="92" max="100"></progress>
+            </article>
+
+        </section>
+
+        <section class="registros">
+
+            <h2>Registro Completo</h2>
+
+            <table class="tabela">
+
+                <thead>
+                    <tr>
+                        <th scope="col">Data</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>01/04/2026</td>
+                        <td>Presente</td>
+                    </tr>
+
+                    <tr>
+                        <td>02/04/2026</td>
+                        <td>Falta</td>
+                    </tr>
+
+                    <tr>
+                        <td>03/04/2026</td>
+                        <td>Presente</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <footer class="observacoes">
+            <p>Aluno dentro da frequência mínima exigida.</p>
+        </footer>
+
+    </section>
+
+</main>
+
+<footer class="creditos">
+    <p>&copy; 2026 | Anthony Gabriel | Portal Escolar</p>
+</footer>
 
 </body>
 </html>

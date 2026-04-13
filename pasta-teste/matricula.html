@@ -4,24 +4,68 @@
 <meta charset="UTF-8">
 <title>Matrícula</title>
 
-<link rel="stylesheet" href="css/global.css">
-<script defer src="js/script.js"></script>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="material">
+<body>
 
-<h1>Pré-Matrícula</h1>
+<main class="container">
 
-<div class="form">
-    <input type="text" id="nome" placeholder="Nome do aluno"><br><br>
-    <input type="text" id="serie" placeholder="Série desejada"><br><br>
-    <input type="text" id="responsavel" placeholder="Responsável"><br><br>
+    <section class="matricula">
 
-    <button onclick="salvarMatricula()">Enviar</button>
-</div>
+        <header class="matricula-header">
+            <h1>Formulário de Matrícula</h1>
+        </header>
 
-<h2>Inscrições:</h2>
-<div id="lista-matriculas"></div>
+        <form class="form-matricula">
+
+            <!-- DADOS DO ALUNO -->
+            <fieldset>
+                <legend>Dados do Aluno</legend>
+
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data de nascimento</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="campo">
+                    <label for="serie">Série</label>
+                    <input type="text" id="serie" name="serie" required>
+                </div>
+            </fieldset>
+
+            <!-- DADOS DO RESPONSÁVEL -->
+            <fieldset>
+                <legend>Responsável</legend>
+
+                <div class="campo">
+                    <label for="responsavel">Nome do responsável</label>
+                    <input type="text" id="responsavel" name="responsavel" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+            </fieldset>
+
+            <!-- ENVIO -->
+            <button type="submit">Enviar Matrícula</button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer class="creditos">
+    <p>&copy; 2026 | Anthony Gabriel | Portal Escolar</p>
+</footer>
 
 </body>
 </html>

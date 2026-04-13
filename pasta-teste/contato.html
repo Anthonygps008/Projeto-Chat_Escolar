@@ -4,23 +4,58 @@
 <meta charset="UTF-8">
 <title>Contato</title>
 
-<link rel="stylesheet" href="css/global.css">
-<script defer src="js/script.js"></script>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<h1>Fale com a Escola</h1>
+<main class="container">
 
-<div class="form">
-    <input type="text" id="nome" placeholder="Seu nome"><br><br>
-    <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea><br><br>
+    <section class="contato">
+        <h1>Fale Conosco</h1>
 
-    <button onclick="enviarMensagem()">Enviar</button>
-</div>
+        <!-- FORMULÁRIO -->
+        <form class="form-contato">
 
-<h2>Mensagens enviadas:</h2>
-<div id="lista-mensagens"></div>
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+        <!-- INFORMAÇÕES -->
+        <section class="info-contato">
+            <h2>Informações</h2>
+
+            <address>
+                <p>Escola Exemplo</p>
+                <p>Rua das Flores, 123</p>
+                <p>Teresópolis - RJ</p>
+                <p>Telefone: (21) 99999-9999</p>
+                <p>Email: contato@escola.com</p>
+            </address>
+        </section>
+
+    </section>
+
+</main>
+
+<footer class="creditos">
+    <p>&copy; 2026 | Anthony Gabriel | Portal Escolar</p>
+</footer>
 
 </body>
 </html>

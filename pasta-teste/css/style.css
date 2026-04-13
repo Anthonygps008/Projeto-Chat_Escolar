@@ -1,0 +1,331 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-ExtraBold.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/Open_Sans/static/OpenSans-Light.ttf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* TOPO */
+.topo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.topo h1 {
+    font-size: 28px;
+}
+
+/* MENU */
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #27ae60;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin-top: 10px;
+}
+
+/* SEÇÕES */
+section {
+    margin-bottom: 30px;
+}
+
+/* TABELAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #27ae60;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+/* PROGRESSO */
+progress {
+    width: 100%;
+    height: 15px;
+}
+
+/* FORMULÁRIOS */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* BOTÃO */
+button {
+    background: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #219150;
+}
+
+/* MATERIAL / AVISOS / COMUNICADOS */
+article {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* MAPA */
+iframe {
+    border-radius: 10px;
+}
+
+/* RODAPÉ */
+.creditos {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* GARANTIR QUE NOVAS TAGS SE COMPORTEM COMO ANTES */
+
+main, section {
+    display: block;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+article {
+    display: block;
+}
+
+/* GARANTIR MESMO VISUAL DOS CARDS */
+.cards article {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* GARANTIR GRID FUNCIONANDO */
+.cards {
+    display: grid;
+}
+
+/* IMAGENS DOS CARDS */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TABELAS MAIS CONSISTENTES */
+table {
+    display: table;
+}
+
+/* FORMULÁRIOS */
+form {
+    display: block;
+}
+
+/* LINKS COMO BOTÃO (MATERIAL, ETC) */
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== INDEX CARDS ESTILO ANTIGO ===== */
+
+/* CENTRALIZA NA TELA */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GRID DOS CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 30px;
+    justify-content: center;
+}
+
+/* CARD */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* HOVER (igual antigo) */
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGEM */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* TÍTULO */
+.card-title {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* RODAPÉ */
+.creditos {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #777;
+}

@@ -2,31 +2,62 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Visitante</title>
+<title>Área do Visitante</title>
 
-<link rel="stylesheet" href="css/global.css">
-<link rel="stylesheet" href="css/visitante.css">
-
+<link rel="stylesheet" href="css/style.css">
 <script defer src="js/script.js"></script>
 </head>
 
 <body>
 
-<h1>Área do Visitante</h1>
+<main class="container">
 
-<div class="grid">
-    <div class="item" data-link="sobre.html">🏫 Sobre</div>
-<div class="item" data-link="localizacao.html">📍 Localização</div>
-<div class="item" data-link="contato.html">📩 Falar com a escola</div>
-<div class="item" data-link="matricula.html">📝 Matrícula</div>
-</div>
+    <!-- TOPO -->
+    <header class="topo">
+        <h1>Área do Visitante</h1>
+        <p>Bem-vindo 👋</p>
+    </header>
 
+    <!-- MENU -->
+    <nav class="menu" aria-label="Menu do visitante">
+        <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="comunicados.html">Comunicados</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="matricula.html">Matrícula</a></li>
+        </ul>
+    </nav>
 
+    <!-- CARDS -->
+    <section class="cards">
 
-  <div class="creditos">
-  <p>
-    &COPY; Copyright 2025 | by Anthony 🎲
-  </p>
-</div>
+        <article class="card" data-link="sobre.html">
+            <h2>Sobre</h2>
+            <p>Conheça a escola</p>
+        </article>
+
+        <article class="card" data-link="comunicados.html">
+            <h2>Comunicados</h2>
+            <p>Informações oficiais</p>
+        </article>
+
+        <article class="card" data-link="contato.html">
+            <h2>Contato</h2>
+            <p>Fale conosco</p>
+        </article>
+
+        <article class="card" data-link="matricula.html">
+            <h2>Matrícula</h2>
+            <p>Realize sua inscrição</p>
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="creditos">
+    <p>&copy; 2026 | Anthony Gabriel | Portal Escolar</p>
+</footer>
+
 </body>
 </html>
